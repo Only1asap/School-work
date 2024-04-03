@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+        <title>Hospital Booking Appointment</title>
+        <style>
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+                margin:0;
+                padding:0;
+                background-image: url("");
+                background-size:cover;
+                background-attachment: fixed;
+                background-repeat:no-repeat;
+                
+            }
+            .container{
+                max-width: 600px;
+                margin: 20px auto;
+                padding: 20px;
+                position: absolute;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                border-radius: 20px;
+                box-shadow: 0 0 20px rgb(0, 0, 0,05);
+            }
+            h1{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            input[type="text"],
+            input[type="cel"],
+            input[type="email"],
+            input[type="date"],
+            textarea {
+                width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+            }
+            input[type="submit"] {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                padding: 12px 20px;
+                cursor: pointer;
+                font-size: 16px;
+                display: block;
+                margin: 0 auto;
+            }
+            input[type="submit"]:hover {
+            background-color: #0056b3;
+            }
+        </style>
+
+    </head>
+        <body>
+            <div class=container>
+                <h1>Book Appointment</h1>
+                <form action="#" method="post">
+                    <label for="name">Name & surname:</label>
+                    <input type="text" id="name" name="name" required/>
+
+                    <label for="Phone">Cellphone number:</label>
+                    <input type="cel" id="phone" name="phone" required/>
+
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" name="email" required/>
+
+                    <label for="date">Appointment date:</label>
+                    <input type="date" id="date" name="date" required/>
+
+                    <label for="Address">Home address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+
+                    <input type="submite" value="submit">
+                </form>
+            </div>
+
+        </body>
+</html>
